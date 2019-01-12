@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.HBox?>
 
 
-<HBox fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+<HBox fx:controller="gui.create.NamedTypeEditor" fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
       prefHeight="26.0" prefWidth="321.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <TextField fx:id="name"/>
    <ChoiceBox fx:id="type" prefWidth="150.0"/>

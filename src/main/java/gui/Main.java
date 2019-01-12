@@ -1,5 +1,6 @@
-package gui.main;
+package gui;
 
+import gui.main.DataFrameController;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -11,17 +12,9 @@ import lab0.dataframe.values.IntegerValue;
 
 import java.io.IOException;
 
-public class DataFrameViewer extends Application {
+public class Main extends Application {
 
     public static void main(String[] args) {
-        DataFrame df = new DataFrame(new String[]{"a", "b", "c"}, new Class[]{IntegerValue.class, IntegerValue.class, IntegerValue.class});
-        try {
-            df.addRecord(new IntegerValue(1), new IntegerValue(1), new IntegerValue(1));
-            System.out.println(df);
-        } catch (DFColumnTypeException e) {
-            e.printStackTrace();
-        }
-
         launch(args);
     }
 
